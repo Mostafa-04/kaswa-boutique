@@ -78,40 +78,60 @@ export default function About() {
 
       <div className="max-w-6xl mx-auto px-6 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* اللوحة البصرية */}
-        <div className="relative order-2 lg:order-1">
-          <div
-            className="relative overflow-hidden rounded-[2rem] aspect-[4/5] max-w-md mx-auto shadow-xl"
-            style={{
-              background: `linear-gradient(155deg, ${COLORS.roseDark} 0%, ${COLORS.rose} 35%, ${COLORS.creamSoft} 62%, ${COLORS.olive} 100%)`,
-            }}
-          >
-            <EmblemWatermark />
-            <div
-              className="absolute inset-0 flex items-center justify-center"
-              style={{ mixBlendMode: "overlay" }}
-            >
-              <span
-                className="kaswa-wordmark"
-                style={{ fontSize: "5.5rem", color: "#FFFFFF", opacity: 0.5 }}
-              >
-                k
-              </span>
-            </div>
-          </div>
+<div className="relative order-2 lg:order-1">
+  <div
+    className="relative overflow-hidden rounded-[2rem] aspect-[4/5] max-w-md mx-auto shadow-xl"
+    style={{
+      background: `linear-gradient(
+        155deg,
+        ${COLORS.roseDark} 0%,
+        ${COLORS.rose} 35%,
+        ${COLORS.creamSoft} 62%,
+        ${COLORS.olive} 100%
+      )`,
+    }}
+  >
+    <EmblemWatermark />
 
-          {/* بطاقة عائمة */}
-          <div
-            className="absolute -bottom-6 right-6 sm:right-10 rounded-2xl px-6 py-4 shadow-lg text-center"
-            style={{ backgroundColor: "#FFFFFF" }}
-          >
-            <p className="kaswa-wordmark" style={{ fontSize: "1.9rem", color: COLORS.roseDark, lineHeight: 1 }}>
-              +500
-            </p>
-            <p className="text-xs font-bold mt-1" style={{ color: COLORS.olive, letterSpacing: "0.08em" }}>
-              قطعة مختارة بعناية
-            </p>
-          </div>
-        </div>
+    {/* Logo */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <img
+        src="/logo.png"
+        alt="Kaswa"
+        className="w-[65%] max-w-[260px] h-auto object-contain"
+      />
+    </div>
+  </div>
+
+  {/* بطاقة عائمة */}
+  <div
+    className="absolute -bottom-6 right-6 sm:right-10 rounded-2xl px-6 py-4 shadow-lg text-center"
+    style={{
+      backgroundColor: "#FFFFFF",
+    }}
+  >
+    <p
+      className="kaswa-wordmark"
+      style={{
+        fontSize: "1.9rem",
+        color: COLORS.roseDark,
+        lineHeight: 1,
+      }}
+    >
+      +10
+    </p>
+
+    <p
+      className="text-xs font-bold mt-1"
+      style={{
+        color: COLORS.olive,
+        letterSpacing: "0.08em",
+      }}
+    >
+      قطعة مختارة بعناية
+    </p>
+  </div>
+</div>
 
         {/* النص */}
         <div className="order-1 lg:order-2">

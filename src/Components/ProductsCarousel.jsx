@@ -9,7 +9,7 @@ const INK = "#332B26";
 export default function ProductsCarousel() {
   const navigate = useNavigate();
 
-  // نكرر المنتجات حتى تستمر الحركة بدون نهاية
+ 
   const products = [...PRODUCTS, ...PRODUCTS];
 
   function getImage(product) {
@@ -19,7 +19,7 @@ export default function ProductsCarousel() {
       return null;
     }
 
-    return `/images/${imageName}.jpg`;
+    return `${imageName}`;
   }
 
   function handleProductClick(product) {
