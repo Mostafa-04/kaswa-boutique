@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, MessageCircle, ShoppingBag } from "lucide-react";
 
 import { useCart } from "../context/CartContext";
-import ProductImage from "../components/ProductImage";
+import ProductImage from "../Components/ProductImage";
 
 const INK = "#332B26";
 const CREAM_BG = "#FAF6F2";

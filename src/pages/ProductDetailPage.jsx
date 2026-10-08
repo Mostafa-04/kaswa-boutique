@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 import { PRODUCTS } from "../Components/produits";
-import ProductImage from "../components/ProductImage";
+import ProductImage from "../Components/ProductImage";
 import { useCart } from "../context/CartContext";
 
 const INK = "#332B26";

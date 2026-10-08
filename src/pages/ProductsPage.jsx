@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { PRODUCTS } from "../Components/produits"; // عدّلي المسار حسب مكان produit.js عندك
-import ProductImage from "../components/ProductImage";
+import ProductImage from "../Components/ProductImage";
 
 const INK = "#332B26";
 const CREAM_BG = "#FAF6F2";
